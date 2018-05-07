@@ -13,6 +13,9 @@
 		4A9C874320A0AE0C00793579 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C874120A0AE0C00793579 /* Main.storyboard */; };
 		4A9C874520A0AE0C00793579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C874420A0AE0C00793579 /* Assets.xcassets */; };
 		4A9C874820A0AE0C00793579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C874620A0AE0C00793579 /* LaunchScreen.storyboard */; };
+		4A9C875320A0AF6D00793579 /* BFBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C875220A0AF6D00793579 /* BFBaseController.m */; };
+		4A9C875720A0B04600793579 /* BFLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C875620A0B04600793579 /* BFLoginController.m */; };
+		4A9C876420A0BF7900793579 /* UIView+BFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C876320A0BF7900793579 /* UIView+BFView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,13 @@
 		4A9C874420A0AE0C00793579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A9C874720A0AE0C00793579 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A9C874920A0AE0C00793579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A9C875120A0AF6D00793579 /* BFBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFBaseController.h; sourceTree = "<group>"; };
+		4A9C875220A0AF6D00793579 /* BFBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFBaseController.m; sourceTree = "<group>"; };
+		4A9C875520A0B04600793579 /* BFLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLoginController.h; sourceTree = "<group>"; };
+		4A9C875620A0B04600793579 /* BFLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLoginController.m; sourceTree = "<group>"; };
+		4A9C875820A0B2D300793579 /* BFApp.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFApp.pch; sourceTree = "<group>"; };
+		4A9C876220A0BF7900793579 /* UIView+BFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BFView.h"; sourceTree = "<group>"; };
+		4A9C876320A0BF7900793579 /* UIView+BFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BFView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,9 @@
 		4A9C873720A0AE0C00793579 /* BFApp */ = {
 			isa = PBXGroup;
 			children = (
+				4A9C875E20A0BF2D00793579 /* BFCategory */,
+				4A9C875420A0AFEE00793579 /* BFLogin */,
+				4A9C874F20A0AEFE00793579 /* BFBase */,
 				4A9C873B20A0AE0C00793579 /* AppDelegate.h */,
 				4A9C873C20A0AE0C00793579 /* AppDelegate.m */,
 				4A9C873E20A0AE0C00793579 /* ViewController.h */,
@@ -75,8 +88,44 @@
 			isa = PBXGroup;
 			children = (
 				4A9C873920A0AE0C00793579 /* main.m */,
+				4A9C875820A0B2D300793579 /* BFApp.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A9C874F20A0AEFE00793579 /* BFBase */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C875020A0AF3600793579 /* BFBaseController */,
+			);
+			path = BFBase;
+			sourceTree = "<group>";
+		};
+		4A9C875020A0AF3600793579 /* BFBaseController */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C875120A0AF6D00793579 /* BFBaseController.h */,
+				4A9C875220A0AF6D00793579 /* BFBaseController.m */,
+			);
+			path = BFBaseController;
+			sourceTree = "<group>";
+		};
+		4A9C875420A0AFEE00793579 /* BFLogin */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C875520A0B04600793579 /* BFLoginController.h */,
+				4A9C875620A0B04600793579 /* BFLoginController.m */,
+			);
+			path = BFLogin;
+			sourceTree = "<group>";
+		};
+		4A9C875E20A0BF2D00793579 /* BFCategory */ = {
+			isa = PBXGroup;
+			children = (
+				4A9C876220A0BF7900793579 /* UIView+BFView.h */,
+				4A9C876320A0BF7900793579 /* UIView+BFView.m */,
+			);
+			path = BFCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9C875320A0AF6D00793579 /* BFBaseController.m in Sources */,
+				4A9C875720A0B04600793579 /* BFLoginController.m in Sources */,
 				4A9C874020A0AE0C00793579 /* ViewController.m in Sources */,
+				4A9C876420A0BF7900793579 /* UIView+BFView.m in Sources */,
 				4A9C873D20A0AE0C00793579 /* AppDelegate.m in Sources */,
 				4A9C873A20A0AE0C00793579 /* main.m in Sources */,
 			);
@@ -272,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N8M9ALB4QH;
+				GCC_PREFIX_HEADER = BFApp/BFApp.pch;
 				INFOPLIST_FILE = BFApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -285,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N8M9ALB4QH;
+				GCC_PREFIX_HEADER = BFApp/BFApp.pch;
 				INFOPLIST_FILE = BFApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

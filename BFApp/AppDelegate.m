@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BFLoginController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [self switchToLogin];
+    
     return YES;
 }
 
@@ -45,6 +49,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Login
+
+- (void)switchToLogin {
+    
+    BFLoginController *loginVC = [[BFLoginController alloc] init];
+    self.window.rootViewController = loginVC;
+    [self.window makeKeyAndVisible];
 }
 
 
